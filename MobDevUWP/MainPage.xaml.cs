@@ -10,6 +10,7 @@
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Background;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -113,6 +114,35 @@ namespace MobDevUWP
             var todoItem = new TodoItem { Text = TextInput.Text };
             TextInput.Text = "";
             await InsertTodoItem(todoItem);
+
+            var access = await BackgroundExecutionManager.RequestAccessAsync();
+            switch(access)
+            {
+                case BackgroundAccessStatus.Unspecified:
+                    break;
+                case BackgroundAccessStatus.AllowedMayUseActiveRealTimeConnectivity:
+                    break;
+                case BackgroundAccessStatus.AllowedWithAlwaysOnRealTimeConnectivity:
+                    break;
+                case BackgroundAccessStatus.Denied:
+                    break;
+                default:
+                    break;
+            }
+            var task = new BackgroundTaskBuilder
+            {
+                Name = "My Task",
+                TaskEntryPoint = typeof(BackgroundStuff.MyBackgroundTask).ToString(),
+                
+            };
+
+            var trigger = new ApplicationTrigger();
+            task.SetTrigger(trigger);
+            task.Register();
+            await trigger.RequestAsync();
+
+
+           var condition = new SystemCondition(SystemConditionType.InternetAvailable);
         }
 
         private async void CheckBoxComplete_Checked(object sender, RoutedEventArgs e)

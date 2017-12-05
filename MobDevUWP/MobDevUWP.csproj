@@ -133,6 +133,12 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackgroundStuff\BackgroundStuff.csproj">
+      <Project>{af81a643-ca2d-4fd8-8840-8944e946f4dc}</Project>
+      <Name>BackgroundStuff</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
