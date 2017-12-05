@@ -11,6 +11,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Background;
+using Windows.UI.Notifications;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -115,34 +116,16 @@ namespace MobDevUWP
             TextInput.Text = "";
             await InsertTodoItem(todoItem);
 
-            var access = await BackgroundExecutionManager.RequestAccessAsync();
-            switch(access)
-            {
-                case BackgroundAccessStatus.Unspecified:
-                    break;
-                case BackgroundAccessStatus.AllowedMayUseActiveRealTimeConnectivity:
-                    break;
-                case BackgroundAccessStatus.AllowedWithAlwaysOnRealTimeConnectivity:
-                    break;
-                case BackgroundAccessStatus.Denied:
-                    break;
-                default:
-                    break;
-            }
-            var task = new BackgroundTaskBuilder
-            {
-                Name = "My Task",
-                TaskEntryPoint = typeof(BackgroundStuff.MyBackgroundTask).ToString(),
-                
-            };
+            //build toast
+            string message = "Todo saved in database";
 
-            var trigger = new ApplicationTrigger();
-            task.SetTrigger(trigger);
-            task.Register();
-            await trigger.RequestAsync();
-
-
-           var condition = new SystemCondition(SystemConditionType.InternetAvailable);
+            var template = ToastTemplateType.ToastText01;
+            var xml = ToastNotificationManager.GetTemplateContent(template);
+            var elements = xml.GetElementsByTagName("text");
+            var text = xml.CreateTextNode(message);
+            elements[0].AppendChild(xml.CreateTextNode(message));
+            var toast = new ToastNotification(xml);
+            ToastNotificationManager.CreateToastNotifier().Show(toast);
         }
 
         private async void CheckBoxComplete_Checked(object sender, RoutedEventArgs e)

@@ -15,7 +15,7 @@ namespace BackgroundStuff
         // when background task is invoked..it runs this method
         public void Run(IBackgroundTaskInstance taskInstance)
         {
-            SendToast("Todo saved to database");
+           // SendToast("Todo saved to database");
 
             // throw new NotImplementedException();
         }
