@@ -36,6 +36,8 @@ namespace MobDevUWP
         public MainPage()
         {
             this.InitializeComponent();
+        
+          
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
@@ -163,5 +165,7 @@ namespace MobDevUWP
         }
 #endif
         #endregion
+
+  
     }
 }
