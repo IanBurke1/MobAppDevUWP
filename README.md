@@ -6,7 +6,8 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 - Mobile services for data storage and retrieval. The cloud service does not have to be written in C# to be able to interact with a UWP. The preferred cloud to use is [Azure](https://azure.microsoft.com/en-gb/).
 - Use of the MVVM design pattern in the development approach.
 
-**_For more: [Project Instructions](https://emerging-technologies.github.io/problems/project.html)_**
+## Windows Store Link
+**_Link to app on Windows Store: [Goal Setter]()_**
 
 ## Architecture
 
@@ -23,4 +24,4 @@ For this project, I have used Microsoft [Visual Studio 2017](https://www.visuals
 Both [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) and [XAML](https://msdn.microsoft.com/en-us/library/cc295302.aspx?f=255&MSPPError=-2147217396) interact with each other to create a Web application. Both are binding.
 
 ### Azure
-[Microsoft Azure](https://azure.microsoft.com/en-us/overview/what-is-azure/)is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through a global network of Microsoft-managed data centers. It provides software as a service (SaaS), platform as a service and infrastructure as a service and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
+[Microsoft Azure](https://azure.microsoft.com/en-us/overview/what-is-azure/) is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through a global network of Microsoft-managed data centers. It provides software as a service (SaaS), platform as a service and infrastructure as a service and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
