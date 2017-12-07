@@ -9,6 +9,9 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 ## Windows Store Link
 **_Link to app on Windows Store: [Goal Setter]()_**
 
+## Application
+I have created a simple goal setting app where users can add their goals which is stored into a cloud database hosted by Azure. Users will see a list of their goals on the next pivot with delete and refresh functions. I also added a toast notification to let users know their goal is saved once they hit the save button. 
+
 ## Architecture
 
 ### Microsoft Visual Studio
@@ -17,7 +20,7 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 For this project, I have used Microsoft [Visual Studio 2017](https://www.visualstudio.com/vs/whatsnew/).
 
 ### C# and XAML
-[C#](https://docs.microsoft.com/en-us/dotnet/csharp/) (pronounced C Sharo) is a hybrid of C and C++, it is a Microsoft programming language. C# is an object-oriented programming language used with XAML-based Web services on the .NET platform and designed for improving productivity in the development of Web Applications.
+[C#](https://docs.microsoft.com/en-us/dotnet/csharp/) (pronounced C Sharp) is a hybrid of C and C++, it is a Microsoft programming language. C# is an object-oriented programming language used with XAML-based Web services on the .NET platform and designed for improving productivity in the development of Web Applications.
 
 [XAML](https://msdn.microsoft.com/en-us/library/cc295302.aspx?f=255&MSPPError=-2147217396) (Extensible Application Markup Language) is an XML-based markup language developed by Microsoft. It it tpically used to create an application's user interface. It's basically behind the visual presentation of an application just like HTML is the language behind the visual presentation of a Web Page.
 
