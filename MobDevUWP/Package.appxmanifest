@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="b7657ddb-b2f7-4885-9e64-d4f2feaf51e1" Publisher="CN=anwigley" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="b7657ddb-b2f7-4885-9e64-d4f2feaf51e1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="16808IanBurke.GoalSetter" Publisher="CN=4645A022-23DA-475A-A17B-A6E318079FEB" Version="1.1.4.0" />
+  <mp:PhoneIdentity PhoneProductId="995fe569-0308-4e36-80fb-e169670dd751" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>TryMobileApp</DisplayName>
-    <PublisherDisplayName>anwigley</PublisherDisplayName>
+    <DisplayName>Goal Setter</DisplayName>
+    <PublisherDisplayName>Ian Burke</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -15,10 +15,17 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MobDevUWP.App">
-      <uap:VisualElements DisplayName="MobDevUWP" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MobDevUWP" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+      <uap:VisualElements DisplayName="Goal Setter" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Set your goals and bring your dreams to reality." BackgroundColor="transparent">
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundStuff.MyBackgroundTask">
