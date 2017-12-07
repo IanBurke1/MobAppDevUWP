@@ -102,36 +102,46 @@ namespace MobDevUWP
 
         private async void ButtonRefresh_Click(object sender, RoutedEventArgs e)
         {
+            // starts as false 
             ButtonRefresh.IsEnabled = false;
 
 #if OFFLINE_SYNC_ENABLED
             await SyncAsync(); // offline sync
-#endif
+#endif         
+            // wait for async and then call method
             await RefreshTodoItems();
-
+            // enable refresh
             ButtonRefresh.IsEnabled = true;
         }
 
         private async void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
-            var todoItem = new TodoItem { Text = TextInput.Text };
+            // create new todo item passing in text input from user
+            var todoItem = new TodoItem { Text = TextInput.Text};
             TextInput.Text = "";
+            // add to list
             await InsertTodoItem(todoItem);
 
             //build toast
-            string message = "Todo saved in database";
 
+            // declare toast message
+            string message = "Todo saved in database";
+            // add toast template 
             var template = ToastTemplateType.ToastText01;
+            // get template content
             var xml = ToastNotificationManager.GetTemplateContent(template);
             var elements = xml.GetElementsByTagName("text");
+            // create the message and append to toast
             var text = xml.CreateTextNode(message);
             elements[0].AppendChild(xml.CreateTextNode(message));
+            // create new toast object 
             var toast = new ToastNotification(xml);
             ToastNotificationManager.CreateToastNotifier().Show(toast);
         }
 
         private async void CheckBoxComplete_Checked(object sender, RoutedEventArgs e)
         {
+ 
             CheckBox cb = (CheckBox)sender;
             TodoItem item = cb.DataContext as TodoItem;
             await UpdateCheckedTodoItem(item);
