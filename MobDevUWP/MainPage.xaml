@@ -6,9 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    
+    
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        
+        
         <Grid x:Name="ContentGrid" Margin="12">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -28,7 +32,7 @@
 
             </StackPanel>
 
-
+       
 
 
             <Pivot x:Name="rootPivot" Grid.ColumnSpan="2" Margin="10,3,62,10" Grid.Row="2">
@@ -36,16 +40,15 @@
 
 
 
+
+
                     <StackPanel Grid.Row="1">
-                        <!--  <local:QuickStartTask x:Name="quickStartTask" Number="1" Title="Insert a TodoItem" 
-                                      Description="Enter some text below and click Save to insert a new todo item into your database" />
-                    -->
                         <TextBlock TextAlignment="Center" Text="Set your goals" FontSize="24" />
                         <StackPanel x:Name="addItemPanel" Orientation="Vertical" RenderTransformOrigin="0.519,0.478">
 
                             <TextBox MinWidth="300" Margin="5,5,5,5" x:Name="TextInput" KeyDown="TextInput_KeyDown" Height="30"/>
 
-                            <Button x:Name="ButtonSave" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Margin="0,8,8,8" Click="ButtonSave_Click">
+                            <Button x:Name="ButtonSave" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,8,8,8" Click="ButtonSave_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <SymbolIcon Symbol="Add"/>
                                     <TextBlock Margin="5">
@@ -53,8 +56,10 @@
                                     </TextBlock>
                                 </StackPanel>
                             </Button>
+
                         </StackPanel>
                     </StackPanel>
+                  
 
 
                 </PivotItem>
@@ -71,6 +76,7 @@
                                 <TextBlock Margin="5">Refresh</TextBlock>
                             </StackPanel>
                         </Button>
+                  
 
 
                         <ScrollViewer Grid.Row="1" Margin="0,50,0,0" 
@@ -93,10 +99,7 @@
                     </Grid>
                 </PivotItem>
 
-                <PivotItem Header="Quotes">
-                    <!--Pivot content goes here-->
-                    <TextBlock Text="Content of pivot item 3."/>
-                </PivotItem>
+          
             </Pivot>
 
 

@@ -122,6 +122,9 @@ namespace MobDevUWP
             // add to list
             await InsertTodoItem(todoItem);
 
+            
+            
+            
             //build toast
 
             // declare toast message
