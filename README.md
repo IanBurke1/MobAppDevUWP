@@ -9,6 +9,12 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 ## Windows Store Link
 **_Link to app on Windows Store: [Goal Setter]()_**
 
+## Download Project
+1. Click [here](https://github.com/ianburkeixiv/MobAppDevUWP/archive/master.zip) to download the zip of the project.
+2. Extract the project into a directory.
+3. Launch [Visual Studio](https://www.visualstudio.com/vs/whatsnew/) and open the MobDevUWP.sln
+4. Build solution and run on local machine.
+
 ## Application
 I have created a simple goal setting app where users can add their goals which is stored into a cloud database hosted by Azure. Users will see a list of their goals on the next pivot with delete and refresh functions. I also added a toast notification to let users know their goal is saved once they hit the save button. 
 
