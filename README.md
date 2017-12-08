@@ -18,6 +18,10 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 ## Application
 I have created a simple goal setting app where users can add their goals which is stored into a cloud database hosted by Azure. Users will see a list of their goals on the next pivot with delete and refresh functions. I also added a toast notification to let users know their goal is saved once they hit the save button. 
 
+![](https://user-images.githubusercontent.com/22341150/33758882-2303e0d6-dbf8-11e7-988c-3416e6ce5375.PNG)
+
+![](https://user-images.githubusercontent.com/22341150/33758890-27c54286-dbf8-11e7-8946-0a172f715c2f.PNG)
+
 ## Architecture
 
 ### Microsoft Visual Studio
