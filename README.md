@@ -7,7 +7,7 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 - Use of the MVVM design pattern in the development approach.
 
 ## Windows Store Link
-**_Link to app on Windows Store: [Goal Setter]()_**
+**_Link to app on Windows Store: [Goal Setter]()... *Will be up once certified*_**
 
 ![](https://user-images.githubusercontent.com/22341150/33847563-d7f4717a-dea2-11e7-832c-93dc6aa9dd34.PNG)
 
