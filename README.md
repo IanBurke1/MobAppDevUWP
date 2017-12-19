@@ -8,7 +8,8 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 
 ## Windows Store Link
 **_Link to app on Windows Store: [Goal Setter]()... *Will be up once certified*_** 
-19/12/17
+
+![](https://user-images.githubusercontent.com/22341150/34161701-5973e718-e4c9-11e7-8ea4-f2e58c86cd04.PNG)
 ![](https://user-images.githubusercontent.com/22341150/34161411-79ffd074-e4c8-11e7-937b-b20ecc72fc90.PNG)
 
 ## Download Project
