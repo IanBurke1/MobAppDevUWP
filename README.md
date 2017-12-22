@@ -7,12 +7,7 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 - Use of the MVVM design pattern in the development approach.
 
 ## Windows Store Link
-**_Link to app on Windows Store: [Goal Setter]()... *Will be up once certified*_** 
-
-Still in certification as of 19/12/17
-
-![](https://user-images.githubusercontent.com/22341150/34161701-5973e718-e4c9-11e7-8ea4-f2e58c86cd04.PNG)
-![](https://user-images.githubusercontent.com/22341150/34161411-79ffd074-e4c8-11e7-937b-b20ecc72fc90.PNG)
+**_Link to app on Windows Store: [Goal Setter](https://www.microsoft.com/en-ie/store/p/goal-setter/9n8dhj6nsvfq?rtc=1)_** 
 
 ## Download Project
 1. Click [here](https://github.com/ianburkeixiv/MobAppDevUWP/archive/master.zip) to download the zip of the project.
