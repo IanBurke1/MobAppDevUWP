@@ -9,6 +9,8 @@ For my project in Mobile Applications Development, I am required to create a [Wi
 ## Windows Store Link
 **_Link to app on Windows Store: [Goal Setter](https://www.microsoft.com/en-ie/store/p/goal-setter/9n8dhj6nsvfq?rtc=1)_** 
 
+https://www.microsoft.com/en-ie/store/p/goal-setter/9n8dhj6nsvfq?rtc=1
+
 ## Download Project
 1. Click [here](https://github.com/ianburkeixiv/MobAppDevUWP/archive/master.zip) to download the zip of the project.
 2. Extract the project into a directory.
